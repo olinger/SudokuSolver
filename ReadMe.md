@@ -8,7 +8,7 @@ You can build and run this application using the source code provided in the rep
 
 There are two modes the program runs in, solve and test. When running in solve mode you must provide the path to a fu file in the valid format. There is also an optional parameter for an output directory. This will save your solution as a text file in the provided directory. If you don't provide an output directory the output will not be saved.
 
-Examples
+#### Examples
 ```
 ./SudokuSolver.exe --solve Tests\easy.txt --output Solutions/
 ```
