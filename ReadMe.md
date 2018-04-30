@@ -140,7 +140,7 @@ To create a sparse matrix to convert a Sudoku into an Exact Cover Problem and so
 - Column constraint: Only 1 instance of a number can occur in each column
 - Square constraint: Only 1 instance of a number can occur in each 3x3 square
 
-The columns of our sparse matrix represent these four constrainst, and the rows represent every possible position for every number.
+The columns of our sparse matrix represent these four constraints, and the rows represent every possible position for every number.
 
 ### Additional Improvement
 
