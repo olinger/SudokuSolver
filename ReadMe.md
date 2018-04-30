@@ -6,7 +6,7 @@ A C# implementation of the dancing links exact cover solving algorithm applied t
 
 You can build and run this application using the source code provided in the repo or you can run the built executable found in the [release](https://github.com/olinger/SudokuSolver/releases/tag/v1.0). The tests are provided in the source code as well as in a zip folder included in the release.
 
-There are two modes the program runs in, solve and test. When running in solve mode you must provide the path to a Sudoku file in the valid format. There is also an optional parameter for an output directory. This will save your solution as a text file in the provided directory. If you don't provide an output directory the output will not be saved.
+There are two modes the program runs in, solve and test. When running in solve mode you must provide the path to a fu file in the valid format. There is also an optional parameter for an output directory. This will save your solution as a text file in the provided directory. If you don't provide an output directory the output will not be saved.
 
 Examples
 ```
@@ -154,8 +154,8 @@ There are 9 tests provided in the Tests folder. They perform the following check
 - invalid chars - An input file with invalid characters in it
 - invalid clues -  A Sudoku with less than 17 clues (therefore not valid and the algorithm will not attempt)
 - invalid size 1 & 2 - Two input files with invalid sized rows / columns
-- not unique - A sudoku which has more than one solution and is therefore not valid
-- repear numbers - A sudoku with repeating numbers in a column / row / square therefore not valid
+- not unique - A Sudoku which has more than one solution and is therefore not valid
+- repear numbers - A Sudoku with repeating numbers in a column / row / square therefore not valid
 
 ## Results
 
