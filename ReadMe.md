@@ -4,7 +4,7 @@ A C# implementation of the dancing links exact cover solving algorithm applied t
 
 ## Usage
 
-You can build and run this application using the Visual Studio solution provided in the repo here or you can run the executable found here.
+You can build and run this application using the source code provided in the repo or you can run the built executable found in the [release](https://github.com/olinger/SudokuSolver/releases/tag/v1.0). The tests are provided in the source code as well as in a zip folder included in the release.
 
 There are two modes the program runs in, solve and test. When running in solve mode you must provide the path to a Sudoku file in the valid format. There is also an optional parameter for an output directory. This will save your solution as a text file in the provided directory. If you don't provide an output directory the output will not be saved.
 
@@ -18,7 +18,7 @@ Examples
 ```
 ./SudokuSolver.exe --test
 ```
-When running in test mode, the provided Tests folder must be in the root directory where you are running from.
+When running in test mode, the provided [Tests folder](https://github.com/olinger/SudokuSolver/tree/master/SudokuSolver/Tests) must be in the root directory where you are running from.
 
 If you run the program without providing any parameters it will prompt you for user input.
 
@@ -82,7 +82,7 @@ The exact cover of this matrix is a set of one or more rows in which only one '1
 0 1 0 0 0 0 1
 ```
 
-Which are rows 1, 4 and 5 of our original matrix
+Which are rows 1, 4 and 5 of our original matrix.
 
 ### Algorithm X
 
@@ -120,15 +120,15 @@ Each node in the matrix points to nodes to the left, right, above, and below it.
 
 DLX is built around the idea of using the operation described above to "cover" and "uncover" columns in the matrix, rather than deleting them. Here is a representation of the simple example implemented as the linked list:
 
-![Dancing Links](/img/links.png)
+![Dancing Links](https://github.com/olinger/SudokuSolver/blob/master/img/links.PNG)
 
 And here it what it will look like after A is covered:
 
-![Cover A](/img/links.png)
+![Cover A](https://github.com/olinger/SudokuSolver/blob/master/img/linkscovera.PNG)
 
 And then after D and G are covered:
 
-![Cover D G](/img/links.png)
+![Cover D G](https://github.com/olinger/SudokuSolver/blob/master/img/linkscoverdg.PNG)
 
 Eventually this algorithm will find all solutions to any exact cover problem.
 
@@ -159,7 +159,7 @@ There are 9 tests provided in the Tests folder. They perform the following check
 
 ## Results
 
-The solutions to the provided puzzles are contained text files in the Solutions folder. Each puzzle was solved in 4 milliseconds. Here is each solution:
+The 5 provided puzzles are contained in the [Puzzles folder](https://github.com/olinger/SudokuSolver/tree/master/SudokuSolver/Puzzles). The solutions to the provided puzzles are contained text files in the [Solutions folder](https://github.com/olinger/SudokuSolver/tree/master/SudokuSolver/Solutions). Each puzzle was solved in 4 milliseconds. Here is each solution:
 
 ### Puzzle 1
 ```
@@ -225,3 +225,4 @@ The solutions to the provided puzzles are contained text files in the Solutions 
 1 8 3 2 9 7 5 4 6
 2 5 9 4 6 3 8 7 1
 ```
+
