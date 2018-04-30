@@ -34,7 +34,7 @@ namespace Sudoku
                 if (!String.IsNullOrWhiteSpace(output_dir))
                 {
                     Directory.CreateDirectory(output_dir);
-                    var filename = string.Format("{0}_solution.txt", puzzle_name);
+                    var filename = string.Format("{0}.sln.txt", puzzle_name);
                     string path = Path.Combine(output_dir, filename);
                     Console.WriteLine(String.Format("Your solved puzzle has been saved to the file: {0}", Path.GetFullPath(path)));
                     solution.Save_File(path);
